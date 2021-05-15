@@ -1,10 +1,9 @@
-import Head from 'next/head';
 import Layout from '@/components/Layout';
 
-export default function Home() {
+export default function index() {
   return (
     <Layout>
-      <h1>Home</h1>
+      <h1>My Events</h1>
     </Layout>
   );
 }
