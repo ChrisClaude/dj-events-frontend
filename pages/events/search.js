@@ -36,8 +36,6 @@ export async function getServerSideProps({ query: { term } }) {
 
   const events = await res.json();
 
-  console.log(events);
-
   return {
     props: {
       events,

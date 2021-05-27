@@ -27,14 +27,12 @@ export default function EventMap({ evt }) {
         setLoading(false);
       },
       error => {
-        console.log(error);
+        console.error(error);
       }
     );
   }, []);
 
   Geocode.setApiKey(process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY);
-
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY);
 
   if (loading) return false;
 
